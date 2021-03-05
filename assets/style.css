@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background:rgb(238, 228, 226);
+}
+
+/* header styles */
+
+header {
+  display: flex;
+  background:rgb(247, 188, 122);
+  padding: 15px;
+}
+
+header h1 {
+  padding: 5px 10px 0 10px;
+}
+
+/* end header styles */
