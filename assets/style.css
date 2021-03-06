@@ -81,21 +81,76 @@ header ul li a:hover {
   display: flex;
   justify-content: space-between;
   margin: 45px 100px 0 0;
+  
 }
 
-.about-me h2 {
+/* .about-me h2 {
   text-align: right;
   font-size: 4vh;
   margin: 0 45px 0 6vw;
   padding: 0 15px 0 0;
   border-right: 4px solid rgb(69, 81, 133);
   color:rgb(69, 81, 133)
-}
+} */
 
 .about-me p {
   line-height: 1.5;
   padding: 0 0 30px 0;
 }
 
+.photo {
+  margin: 0 25px;
+}
+
 
 /* About Me Section Styles End */
+
+/* Work Examples Section */
+
+.examples {
+  display:flex;
+  justify-content: space-between;
+  
+  margin: 45px 100px 0 0;
+  
+  
+}
+
+#large-link {
+  height:max-content;
+  width: 100%;
+  margin: 0;
+}
+
+.link-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.link-containers img {
+  height:max-content;
+  margin: 10px;
+}
+
+
+
+
+/* Work Examples Section End */
+
+/* Utility */
+.title-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 45px 0 6vw;
+  font-size: 4vh;    
+  padding: 0 15px 0 0;
+  border-right: 4px solid rgb(69, 81, 133);
+  color:rgb(69, 81, 133);
+  text-align: right;
+  width:min-content;
+  
+  
+}
+
+/* Utility End */
