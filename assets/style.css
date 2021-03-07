@@ -14,7 +14,6 @@ header {
   display: flex;
   justify-content: space-between;
   background:rgb(51, 51, 54);
-  padding: ;
 }
 
 header h1 {
@@ -131,56 +130,75 @@ header ul li a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   flex: 1 0 90%;
-  border: 1px solid black;
-}
-
-.examples .large-link {
-  border: 1px solid red;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 15px;
-  background:seagreen;
-}
-/* WORK ON LINKSWORK ON LINKSWORK ON LINKSWORK ON LINKSWORK ON LINKSWORK ON LINKS */
-.examples .large-link a {
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.examples .large-link p {
-  display: flex;
-  color:seashell;
- 
-}
-
-
-.examples .link {
-  border: 1px solid red;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 15px;
-  background:seagreen;
-}
-
-.examples .link img {
-  opacity: .5;
-}
-
-.examples .link a {
-  display: flex;
   
 }
 
-.examples .link a p {
+.examples .large-link {
+  border: 10px solid rgb(171, 241, 232);
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex: 0 0 10%;
-  margin: 10px;
+  flex-wrap: wrap;
+  background-image: url(../assets/images/run-buddy-shot.png);
+  background-size: cover;
+  background-color: rgb(69, 81, 133, .5);
+  background-blend-mode:saturation;
+  margin: 15px;
+  height: 60vh;
+  width: 85vw;
+  text-decoration: none;
 }
+
+.examples .large-link:hover {
+  background-color:rgb(69, 81, 133, .3);
+ 
+}
+/* WORK ON LINKSWORK ON LINKSWORK ON LINKSWORK ON LINKSWORK ON LINKSWORK ON LINKS */
+.examples .large-link p {
+ margin: auto 0 30px 0;
+ padding: 15px 10px;
+ width: 25%;
+ height: 15%;
+ background-color:rgb(171, 241, 232); 
+ font-size: xx-large;
+ font-weight: bold;
+ color: rgb(51, 51, 54);
+}
+
+.examples .large-link p span {
+  font-size: x-large;
+}
+
+.examples .link  {
+  border: 6px solid rgb(171, 241, 232);
+  width: 45%;
+  min-height: 250px;
+  display: flex;
+  margin: 15px;
+  background-image: url(https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo4.jpg);
+  background-color:rgb(69, 81, 133, .5);
+  background-blend-mode: saturation;
+  text-decoration: none;
+}
+
+.examples .link:hover {
+  background-color: rgb(69, 81, 133, .3);
+}
+
+
+.examples .link p {
+  margin-top:auto;
+  padding: 15px 10px;
+  width: 25%;
+  height: 30%;
+  background-color:rgb(171, 241, 232);
+  margin-bottom: 25px;
+  font-size: x-large;
+  font-weight: bold;
+  color:rgb(51, 51, 54);
+}
+
+
+  
+
 /* WORK ON LINKSWORK ON LINKSWORK ON LINKSWORK ON LINKSWORK ON LINKS */
 
 
@@ -198,8 +216,6 @@ header ul li a:hover {
   color:rgb(69, 81, 133);
   text-align: right;
   width:min-content;
-  
-   */
 }
 
 /* Utility End */
