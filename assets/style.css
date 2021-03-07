@@ -4,8 +4,16 @@
 }
 
 body {
-  background:rgb(234, 238, 243);
+  background:#95a3b3;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+:root {
+  --dark: #242038;
+  --light: #95a3b3;
+  --green: #88d18a;
+  --red: #a31621;
+  --jungle: #0b5351;
 }
 
 /* header styles */
@@ -13,15 +21,15 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  background:rgb(51, 51, 54);
+  background:var(--dark);
 }
 
 header h1 {
   padding: 8px 15px 8px 75px;
   margin: 10px 0;
-  background:rgb(171, 241, 232);
+  background: var(--green);
   font-size: 4vh;
-  color:rgb(51, 51, 54);
+  color: var(--dark);
 }
  
  header nav ul {
@@ -39,15 +47,15 @@ header ul li a {
   padding: 5px 15px;
   margin: 0 5px;
   font-size: x-large;
-  color:rgb(171, 241, 232);
-  border-bottom: 4px solid rgb(171, 241, 232);
+  color:var(--green);
+  border-bottom: 4px solid var(--green);
   
 }
 
 header ul li a:hover {
-  color:rgb(51, 51, 54);
+  color:var(--dark);
   text-shadow: 1px 1px 4px rgb(91, 103, 129);
-  background: rgb(171, 241, 232);
+  background: var(--green);
   border-radius: 15%;
 }
 
@@ -65,9 +73,9 @@ header ul li a:hover {
 }
 
 .hero h2 {
-  background:rgb(171, 241, 232);
+  background:var(--green);
   font-size: 2.8vh;
-  color:rgb(51, 51, 54);
+  color:var(--dark);
   padding: 5px 8px;
   margin: 190px 100px 30px 10px;
 }
@@ -79,20 +87,17 @@ header ul li a:hover {
 .about-me {
   display: flex;
   margin: 45px 100px 0 0;
-  
-
-  
 }
 
-.about-me .title-container {
+/* .about-me .title-container {
   display: flex;
   flex: 1 1 10%;
-}
+} */
 
 .about-me .photo {
   display:flex;
   flex: 1 1 20%;
-  margin: 0 25px;
+  margin: 0 50px;
 }
 
 .about-me p {
@@ -120,27 +125,26 @@ header ul li a:hover {
   margin: 45px 100px 0 0;
 }
 
-.examples .title-container {
+/* .title-container {
   display: flex;
   flex: 1 1 10%;
-}
+} */
 
 .examples .link-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   flex: 1 0 90%;
-  
 }
 
 .examples .large-link {
-  border: 10px solid rgb(171, 241, 232);
+  border: 10px solid var(--green);
   display: flex;
   flex-wrap: wrap;
   background-image: url(../assets/images/run-buddy-shot.png);
   background-size: cover;
-  background-color: rgb(69, 81, 133, .5);
-  background-blend-mode:saturation;
+  background-color: rgb(11, 83, 81, .5);
+  background-blend-mode:soft-light;
   margin: 15px;
   height: 60vh;
   width: 85vw;
@@ -148,7 +152,7 @@ header ul li a:hover {
 }
 
 .examples .large-link:hover {
-  background-color:rgb(69, 81, 133, .3);
+  background-color:rgb(11, 83, 81, .3);
  
 }
 
@@ -157,10 +161,10 @@ header ul li a:hover {
  padding: 15px 10px;
  width: 25%;
  height: 15%;
- background-color:rgb(171, 241, 232); 
+ background-color:var(--green); 
  font-size: xx-large;
  font-weight: bold;
- color: rgb(51, 51, 54);
+ color: var(--dark);
 }
 
 .examples .large-link p span {
@@ -168,19 +172,19 @@ header ul li a:hover {
 }
 
 .examples .link  {
-  border: 6px solid rgb(171, 241, 232);
+  border: 6px solid var(--green);
   width: 45%;
   min-height: 250px;
   display: flex;
   margin: 15px;
   background-image: url(https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo4.jpg);
-  background-color:rgb(69, 81, 133, .5);
+  background-color:rgb(11, 83, 81, .5);
   background-blend-mode: saturation;
   text-decoration: none;
 }
 
 .examples .link:hover {
-  background-color: rgb(69, 81, 133, .3);
+  background-color: rgb(11, 83, 81, .3);
 }
 
 
@@ -189,11 +193,11 @@ header ul li a:hover {
   padding: 15px 10px;
   width: 25%;
   height: 30%;
-  background-color:rgb(171, 241, 232);
+  background-color:var(--green);
   margin-bottom: 25px;
   font-size: x-large;
   font-weight: bold;
-  color:rgb(51, 51, 54);
+  color:var(--dark);
 }
 
 /* Work Examples Section Styles End */
@@ -217,14 +221,15 @@ header ul li a:hover {
   justify-content: space-between;
   list-style: none;
   font-size: x-large;
-  color:rgb(51, 51, 54);
-  padding: 40px;
-  margin: 40px;
+  color:var(--dark);
+  text-shadow: 1px 1px 2px #333;
+  padding: 40px 80px;
 }
 
 .contact-info ul li a {
  text-decoration: none;
- color:rgb(51, 51, 54);
+ color:var(--dark);
+ 
 }
 
 /* Contact Me Section Styles End */
@@ -234,14 +239,15 @@ header ul li a:hover {
 footer {
   display: flex;
   justify-content: space-between;
-  background:rgb(51, 51, 54);
+  background:var(--dark);
   padding: 30px 80px;
   margin-top: 45px;
 }
 
 footer h3 {
   font-size: x-large;
-  color:rgb(171, 241, 232);
+  color:var(--green);
+  text-shadow: 1px 1px 3px #333;
 }
 
 /* Footer Styles End */
@@ -249,14 +255,16 @@ footer h3 {
 /* Utility */
  .title-container {
   display: flex;
-  /* justify-content: flex-start; */
-  /* margin: 0 45px 0 6vw; */
-  font-size: 4vh;    
-  /* padding: 0 15px 0 0; */
-  border-right: 4px solid rgb(69, 81, 133);
-  color:rgb(69, 81, 133);
+  flex: 1 1 10%;
+  justify-content: flex-start;
+  margin-left: 20px;
+  font-size: 3vh;    
+  padding: 0 15px 0 0;
+  border-right: 4px solid var(--jungle);
+  color:var(--jungle);
   text-align: right;
   width:min-content;
+  text-shadow: 1px 1px 3px #333;
 }
 
 /* Utility End */
