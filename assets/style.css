@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 body {
   background:#95a3b3;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 :root {
@@ -134,7 +135,7 @@ header ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex: 1 0 90%;
+  flex: 1 0 85%;
 }
 
 .examples .large-link {
@@ -174,7 +175,7 @@ header ul li a:hover {
 .examples .link  {
   border: 6px solid var(--green);
   width: 45%;
-  min-height: 250px;
+  height: 250px;
   display: flex;
   margin: 15px;
   background-image: url(https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo4.jpg);
@@ -268,3 +269,65 @@ footer h3 {
 }
 
 /* Utility End */
+
+/* Media Querites */
+@media screen and (max-width: 1024px) {
+  
+  /* About Me Section */
+  .about-me .photo {
+    width: 250px;
+    height: 250px;
+  }
+  /* End About Me Section */
+
+  /* Examples Section */
+  .examples .large-link {
+    width: 100%;
+  }
+
+  .examples .large-link p {
+    width: 200px;
+    padding: 5px 10px;
+  }
+
+  .examples .link {
+    width: 100%;
+    height: 100px;
+  }
+
+  .examples .link p {
+    width: 200px;
+    height: 50px;
+  }
+  /* End Examples Section */
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Header Section */
+  header {
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 175px;
+  }
+
+  header h1 {
+    display: flex;
+    padding: 8px 15px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav ul {
+    margin: auto 0;
+  }
+  /* Header Section End */
+
+  /* Contact Me Section */
+  .contact-me ul {
+    display: inline-block;
+    text-align: right;
+  }
+  /* Contact Me Section End */
+}
