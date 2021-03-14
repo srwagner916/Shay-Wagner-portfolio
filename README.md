@@ -7,10 +7,10 @@ I will continually update this portfolio with more examples.  Below you will fin
 Thank you for taking the time to view this.
 
 ### Screenshot
-
+![screenshot](./assets/images/portfolio-shot.png)
 ### Link to the deployed application
-
+https://srwagner916.github.io/Shay-Wagner-portfolio/
 ### Link to the GitHub repository
-
+https://github.com/srwagner916/Shay-Wagner-portfolio
 ### Thank you!
 Shay Wagner
