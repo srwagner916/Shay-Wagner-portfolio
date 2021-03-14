@@ -65,7 +65,7 @@ header ul li a:hover {
 /* Hero Section Styles */
 
 .hero {
-  background-image: url(../assets/images/water-unsplash.jpg);
+  background-image: url(../assets/images/swirl.jpeg);
   background-size: cover;
   height: 20%;
   display: flex;
@@ -96,19 +96,21 @@ header ul li a:hover {
   width: 100%;
 }
 
-.about-me .photo {
+.about-me img {
   display:flex;
   flex: 1 1 20%;
   margin: 0 50px;
   height: 250px;
   width: 250px;
+  border: 6px solid var(--green);
 }
 
 .about-me p {
   display:flex;
   flex: 1 1 70%;
-  line-height: 1.5;
+  line-height: 2;
   margin-right: 50px;
+  font-size: 18px;
 }
 
 /* About Me Section Styles End */
@@ -265,10 +267,26 @@ footer h3 {
 @media screen and (max-width: 1024px) {
   
   /* Examples Section */
+  .examples .link-container {
+    flex: 1 0 77%;
+  }
   .examples .link {
     width: 100%;
   }
   /* End Examples Section */
+
+  /* Contact Me Section */
+  .contact-me ul {
+    display: inline-block;
+    text-align: right;
+    margin: 0 35px;
+    padding: 0;
+  }
+
+  .contact-me ul li {
+    margin: 20px 0;
+  }
+  /* Contact Me Section End */
 }
 
 @media screen and (max-width: 768px) {
@@ -323,20 +341,6 @@ footer h3 {
     height: 400px;
   }
   /*Examples Section End */
-
-
-  /* Contact Me Section */
-  .contact-me ul {
-    display: inline-block;
-    text-align: right;
-    margin: 0 35px;
-    padding: 0;
-  }
-
-  .contact-me ul li {
-    margin: 20px 0;
-  }
-  /* Contact Me Section End */
 }
 
 @media screen and (max-width: 576px) {
