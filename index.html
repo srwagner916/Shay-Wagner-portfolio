@@ -5,19 +5,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Shay Wagner's Portfolio</title>
       <link rel="stylesheet" href="./assets/style.css" />
-    <script>
-      var docWidth = document.documentElement.offsetWidth;
-
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
-    </script>
-
   </head>
   <body>
     <!-- Header Section -->
@@ -50,31 +37,33 @@
     <!-- About Me Section -->
     <section class="about-me" id="about-me">
       <div class="title-container">
-        <h2 class="section-title">About Me</h2>
+        <h2>About Me</h2>
       </div>
-      <div class="photo">
-        <img src="https://via.placeholder.com/250" alt="" />
-      </div>
-      <p>
-        Sed finibus suscipit metus sed convallis. Proin nec mauris lectus. Fusce sit amet scelerisque justo, eu pellentesque ipsum.
-        Nunc elementum erat sit amet consequat fringilla. Suspendisse potenti. Sed aliquet, justo a eleifend suscipit, metus odio
-        convallis erat, nec interdum sem neque ac urna. Aenean a faucibus augue. Sed varius maximus libero, non aliquet sapien pharetra quis.
-        Morbi id convallis ante. Duis finibus, orci id gravida iaculis, elit mauris placerat orci, eget tincidunt turpis lorem a dui. Vestibulum
-        porttitor erat sit amet tortor maximus, quis convallis lorem commodo. Vestibulum at porta diam. Nullam pellentesque justo at libero
-        tincidunt rhoncus. Fusce consequat arcu ut quam malesuada, vel molestie lorem finibus.
-      </br></br>
-        Donec mattis pellentesque magna, vitae finibus nisi tempus ultrices. Nullam ac justo non tellus sagittis sagittis gravida quis dolor. Vestibulum
-        id imperdiet leo, vel maximus libero. Nulla commodo mauris at metus ultricies finibus. Suspendisse justo tellus, commodo ac nisl at, eleifend
-        egestas orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc at cursus massa. Nunc quis nibh
-        quis ante pretium posuere. Aenean feugiat ornare mauris faucibus efficitur. Proin auctor mauris libero, in elementum enim malesuada at.
-      </p>
+      <div class="about-me-container">
+        <div class="photo">
+          <img src="https://via.placeholder.com/250" alt="" />
+        </div>
+        <p>
+          Sed finibus suscipit metus sed convallis. Proin nec mauris lectus. Fusce sit amet scelerisque justo, eu pellentesque ipsum.
+          Nunc elementum erat sit amet consequat fringilla. Suspendisse potenti. Sed aliquet, justo a eleifend suscipit, metus odio
+          convallis erat, nec interdum sem neque ac urna. Aenean a faucibus augue. Sed varius maximus libero, non aliquet sapien pharetra quis.
+          Morbi id convallis ante. Duis finibus, orci id gravida iaculis, elit mauris placerat orci, eget tincidunt turpis lorem a dui. Vestibulum
+          porttitor erat sit amet tortor maximus, quis convallis lorem commodo. Vestibulum at porta diam. Nullam pellentesque justo at libero
+          tincidunt rhoncus. Fusce consequat arcu ut quam malesuada, vel molestie lorem finibus.
+        </br></br>
+          Donec mattis pellentesque magna, vitae finibus nisi tempus ultrices. Nullam ac justo non tellus sagittis sagittis gravida quis dolor. Vestibulum
+          id imperdiet leo, vel maximus libero. Nulla commodo mauris at metus ultricies finibus. Suspendisse justo tellus, commodo ac nisl at, eleifend
+          egestas orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc at cursus massa. Nunc quis nibh
+          quis ante pretium posuere. Aenean feugiat ornare mauris faucibus efficitur. Proin auctor mauris libero, in elementum enim malesuada at.
+        </p>
+        </div>
     </section>
     <!-- End About Me Section -->
 
     <!-- Work Examples Section -->
     <section class="examples" id="examples">
       <div class="title-container">
-        <h2 class="section-title">Work Samples</h2>
+        <h2>Work Samples</h2>
       </div>
       <div class="link-container">
         <a class="large-link" href="https://srwagner916.github.io/run-buddy" target="_blank">
@@ -103,7 +92,7 @@
     <!-- Contact Me Section -->
     <section class="contact-me" id="contact-me">
       <div class="title-container">
-        <h2 class="section-title">Contact Me</h2>
+        <h2>Contact Me</h2>
       </div>
       <div class="contact-info">
         <ul>

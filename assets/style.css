@@ -29,7 +29,7 @@ header h1 {
   padding: 8px 15px 8px 75px;
   margin: 10px 0;
   background: var(--green);
-  font-size: 4vh;
+  font-size: 40px;
   color: var(--dark);
 }
  
@@ -67,7 +67,7 @@ header ul li a:hover {
 .hero {
   background-image: url(../assets/images/water-unsplash.jpg);
   background-size: cover;
-  height: 20vh;
+  height: 20%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -75,7 +75,7 @@ header ul li a:hover {
 
 .hero h2 {
   background:var(--green);
-  font-size: 2.8vh;
+  font-size: 30px;
   color:var(--dark);
   padding: 5px 8px;
   margin: 190px 100px 30px 10px;
@@ -87,34 +87,29 @@ header ul li a:hover {
 
 .about-me {
   display: flex;
+  width: 100%;
   margin: 45px 100px 0 0;
 }
 
-/* .about-me .title-container {
+.about-me-container {
   display: flex;
-  flex: 1 1 10%;
-} */
+  width: 100%;
+}
 
 .about-me .photo {
   display:flex;
   flex: 1 1 20%;
   margin: 0 50px;
+  height: 250px;
+  width: 250px;
 }
 
 .about-me p {
   display:flex;
   flex: 1 1 70%;
   line-height: 1.5;
+  margin-right: 50px;
 }
-
-/* .about-me h2 {
-  text-align: right;
-  font-size: 4vh;
-  margin: 0 45px 0 6vw;
-  padding: 0 15px 0 0;
-  border-right: 4px solid rgb(69, 81, 133);
-  color:rgb(69, 81, 133)
-} */
 
 /* About Me Section Styles End */
 
@@ -126,29 +121,24 @@ header ul li a:hover {
   margin: 45px 100px 0 0;
 }
 
-/* .title-container {
-  display: flex;
-  flex: 1 1 10%;
-} */
-
 .examples .link-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex: 1 0 85%;
+  flex: 1 0 80%;
+  width: 100%;
 }
 
 .examples .large-link {
   border: 10px solid var(--green);
   display: flex;
-  flex-wrap: wrap;
   background-image: url(../assets/images/run-buddy-shot.png);
   background-size: cover;
   background-color: rgb(11, 83, 81, .5);
   background-blend-mode:soft-light;
   margin: 15px;
   height: 60vh;
-  width: 85vw;
+  width: 100%;
   text-decoration: none;
 }
 
@@ -160,8 +150,8 @@ header ul li a:hover {
 .examples .large-link p {
  margin: auto 0 30px 0;
  padding: 15px 10px;
- width: 25%;
- height: 15%;
+ width: fit-content;
+ height: fit-content;
  background-color:var(--green); 
  font-size: xx-large;
  font-weight: bold;
@@ -175,7 +165,7 @@ header ul li a:hover {
 .examples .link  {
   border: 6px solid var(--green);
   width: 45%;
-  height: 250px;
+  height: 150px;
   display: flex;
   margin: 15px;
   background-image: url(https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo4.jpg);
@@ -192,8 +182,8 @@ header ul li a:hover {
 .examples .link p {
   margin-top:auto;
   padding: 15px 10px;
-  width: 25%;
-  height: 30%;
+  width: fit-content;
+  height: fit-content;
   background-color:var(--green);
   margin-bottom: 25px;
   font-size: x-large;
@@ -224,13 +214,17 @@ header ul li a:hover {
   font-size: x-large;
   color:var(--dark);
   text-shadow: 1px 1px 2px #333;
-  padding: 40px 80px;
+  padding: 40px 0 0 0;
+  flex-wrap: wrap;
 }
 
 .contact-info ul li a {
  text-decoration: none;
  color:var(--dark);
- 
+}
+
+.contact-info ul li {
+  margin: 0 25px;
 }
 
 /* Contact Me Section Styles End */
@@ -256,15 +250,12 @@ footer h3 {
 /* Utility */
  .title-container {
   display: flex;
-  flex: 1 1 10%;
-  justify-content: flex-start;
   margin-left: 20px;
-  font-size: 3vh;    
+  font-size: 38px;    
   padding: 0 15px 0 0;
   border-right: 4px solid var(--jungle);
   color:var(--jungle);
   text-align: right;
-  width:min-content;
   text-shadow: 1px 1px 3px #333;
 }
 
@@ -273,37 +264,15 @@ footer h3 {
 /* Media Querites */
 @media screen and (max-width: 1024px) {
   
-  /* About Me Section */
-  .about-me .photo {
-    width: 250px;
-    height: 250px;
-  }
-  /* End About Me Section */
-
   /* Examples Section */
-  .examples .large-link {
-    width: 100%;
-  }
-
-  .examples .large-link p {
-    width: 200px;
-    padding: 5px 10px;
-  }
-
   .examples .link {
     width: 100%;
-    height: 100px;
-  }
-
-  .examples .link p {
-    width: 200px;
-    height: 50px;
   }
   /* End Examples Section */
 }
 
 @media screen and (max-width: 768px) {
-
+  
   /* Header Section */
   header {
     justify-content: center;
@@ -324,10 +293,118 @@ footer h3 {
   }
   /* Header Section End */
 
+  /* Hero Section */
+  .hero h2 {
+    margin-right: 50px;
+  }
+  /* Hero Section End */
+
+  /* About Me Section */
+  .about-me-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-me .photo {
+    justify-content: center;
+  }
+
+  .about-me p {
+    margin: 25px;
+  }
+  /* About Me Section End */
+
+  /* Examples Section */
+  .examples .link-container {
+    flex: 1 0 70%;
+  }
+  
+  .link-container .large-link {
+    height: 400px;
+  }
+  /*Examples Section End */
+
+
   /* Contact Me Section */
   .contact-me ul {
     display: inline-block;
     text-align: right;
+    margin: 0 35px;
+    padding: 0;
+  }
+
+  .contact-me ul li {
+    margin: 20px 0;
   }
   /* Contact Me Section End */
+}
+
+@media screen and (max-width: 576px) {
+  /* Title */
+  .title-container {
+    width: 85%;
+    justify-content: center;
+    text-align: center;
+    border-right: 0;
+    border-bottom: 4px solid var(--jungle);
+    padding: 0;
+    margin: 0 auto 50px auto;
+    
+  }
+  /* Title End */
+
+  /* Header Section */
+  header nav ul a {
+    border-bottom: 0;
+  }
+  /* Header Section End */
+
+  /* About Me */
+  .about-me {
+    flex-direction: column;
+  }
+  
+  .about-me p {
+    line-height: 2;
+    margin: 25px 35px;
+    font-size: large;
+  }
+  /* About Me End */
+
+  /* Examples */
+  .examples {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .examples .link-container {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .examples .large-link {
+    margin: 0 15px;
+  }
+  /* Examples End */
+
+  /* Contact Me */
+  .contact-me {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .contact-me ul {
+    padding: 0;
+    text-align: center;
+  }
+  /* Contact Me End  */
+
+  /* Footer */
+  footer {
+    display: block;
+    text-align: center;
+  }
+  /* Footer End */
 }
