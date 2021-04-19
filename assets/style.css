@@ -134,7 +134,7 @@ header ul li a:hover {
 .examples .large-link {
   border: 10px solid var(--green);
   display: flex;
-  background-image: url(../assets/images/run-buddy-shot.png);
+  background-image: url(../assets/images/food.jpg);
   background-size: cover;
   background-color: rgb(11, 83, 81, .5);
   background-blend-mode:soft-light;
@@ -164,7 +164,43 @@ header ul li a:hover {
   font-size: x-large;
 }
 
-.examples .link  {
+.examples #link1 {
+  border: 6px solid var(--green);
+  width: 45%;
+  height: 150px;
+  display: flex;
+  margin: 15px;
+  background-image: url(../assets/images/run-buddy-shot.png);
+  background-color:rgb(11, 83, 81, .5);
+  background-blend-mode: saturation;
+  text-decoration: none;
+}
+
+.examples #link2  {
+  border: 6px solid var(--green);
+  width: 45%;
+  height: 150px;
+  display: flex;
+  margin: 15px;
+  background-image: url(https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo4.jpg);
+  background-color:rgb(11, 83, 81, .5);
+  background-blend-mode: saturation;
+  text-decoration: none;
+}
+
+.examples #link3  {
+  border: 6px solid var(--green);
+  width: 45%;
+  height: 150px;
+  display: flex;
+  margin: 15px;
+  background-image: url(https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo4.jpg);
+  background-color:rgb(11, 83, 81, .5);
+  background-blend-mode: saturation;
+  text-decoration: none;
+}
+
+.examples #link4  {
   border: 6px solid var(--green);
   width: 45%;
   height: 150px;
